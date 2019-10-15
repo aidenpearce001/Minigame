@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mini Game</title>
+<link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style media="screen">
+.bottomright {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-size: 12px;
+}
+
+element.style 
+{
+    margin-top: 30vh;
+}
+h1 
+{
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+body{
+    font-family: 'Nosifer', cursive;
+    background-color: #999;
+    padding: auto;
+    text-align: center;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  color: #fff;
+  text-align: center;
+  border-radius: 100px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+</style>
+<body>
+<!-- Congratulation! You have found the secret flag -->
+<!-- https://pastebin.com/pieMFGEP-->
+
+<div style="margin-top: 30vh;" class="tooltip">INSPECT ME!
+    <span class="tooltiptext">Next level:192.168.0.100:5000/level2</span>
+</div>
+
+<p class="bottomright">try press F12</p>
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();   
+    });
+</script>
+</body>
+</head>
+</html>
